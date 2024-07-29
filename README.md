@@ -19,3 +19,25 @@ There is another 3rd code new.py, this is for creating the test code and graph t
 
 The line of code where the information will be read in will be this "data = np.loadtxt("DileptonMass.dat")"
 DileptonMass.dat should always be the file that is being read in 
+
+If needed:
+How to install the GiBUU, please reference : https://gibuu.hepforge.org/trac/wiki
+first:
+Create a new directory for GiBUU and change to that directory:
+mkdir GiBUU; cd GiBUU
+
+second:
+wget --content-disposition https://gibuu.hepforge.org/downloads?f=release2023.tar.gz
+tar -xzvf release2023.tar.gz
+
+third:
+wget --content-disposition https://gibuu.hepforge.org/downloads?f=buuinput2023.tar.gz
+tar -xzvf buuinput2023.tar.gz
+
+once thats all downloaded then type 
+make 
+
+once its all compiled then to run the GiBUU 
+./GiBUU.x < my_setup.job/ 
+
+after my_setup.job/ you will want to include a job card of what you want to run, all the jobcards are found within the directory testRun/jobCards
